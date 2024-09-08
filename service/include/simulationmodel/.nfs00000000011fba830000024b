@@ -1,0 +1,49 @@
+#ifndef AUCTIONEER_H_
+#define AUCTIONEER_H_
+
+#include "Package.h"
+#include "IAuction.h"
+#include "Drone.h"
+#include "SimulationModel.h"
+#include "IEntity.h"
+#include <tuple>
+
+class Drone;
+
+/**
+ * @brief this class inhertis from the IAuction class and is responsible for
+ * generating the auction that determines which drones are scheduled to which packages
+ */
+class Auctioneer : public IAuction{
+ public:
+  /**
+   * @brief abstract bidding function
+   *
+   * @param simModel simulation model that drones and packages to be bid on are in
+   */
+  void calculateBids(SimulationModel* simModel);
+
+  /**
+   * @brief Selects best bid
+   * @return tuple of bider-bidee who had best bid
+   */
+  std::tuple<Package*, Drone*, double> auction();
+
+  /**
+   * @brief Add a bid to the vector of bids 
+   * @param package A package to add to the bidding pool
+   * @param drone The drone to bid on
+   */
+  void addBid(Package* package, Drone* drone);
+
+  /**
+   * @brief Getter for bids list
+   * @return A a list of tuples of packages and amounts, matching each
+   * package-drone pair to the amount they are bidding
+   */
+  std::vector<std::tuple<Package*, Drone*, double>> getBids() { return bids; }
+
+ private:
+  std::vector<std::tuple<Package*, Drone*, double>> bids;
+};
+#endif
