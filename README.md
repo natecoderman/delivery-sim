@@ -1,5 +1,5 @@
 # Drone Delivery Simulation on the University of Minnesota Campus
-### Group 49: Greta, Nate, Jose, Dana
+### by Greta, Nate, Jose, Dana
 
 ## The project:
 Our project is a drone delivery simulation, which allows a user to simulate package deliveries on the University of Minnesota East Bank campus. In the simulation, drones deliver packages from a source to a destination for a target robot to pick up. The user can also select which path strategy for the drones to have, such as AStar, Dikjstra's, or Beeline. The simulation contains a helicopter as well, which surveils the map. The project has two extensions, first, a Porch Pirate extension that allows for the possibility of package theft and second, an Auctioneer extension that makes drone delivery more efficient.
