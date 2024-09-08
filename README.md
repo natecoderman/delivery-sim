@@ -1,4 +1,4 @@
-# team-001-49-finalproject
+# Drone Delivery Simulation on the University of Minnesota Campus
 ### Group 49: Greta, Nate, Jose, Dana
 
 ## The project:
