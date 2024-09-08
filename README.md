@@ -71,11 +71,11 @@ Solutions vs failures:
 
 ## UML
 Porch Pirates:
-![Final Project - 3801W (3)](https://media.github.umn.edu/user/22190/files/9fcc6d56-113e-4413-8cc3-f2501362ac48)
+![Final Project - 3801W (3)](readmePhotos/porchUML.png)
 
 
 Auctioneer:
-![Final Project - 3801W(1)](https://media.github.umn.edu/user/29316/files/68456c0f-1b12-4bd1-87f6-ca12cd67d58f)
+![Final Project - 3801W(1)](readmePhotos/auctUML.png)
 
 ## DockerHub link:
 For M1/M2/M3 mac users, use the following link:
